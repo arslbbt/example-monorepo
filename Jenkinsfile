@@ -6,6 +6,8 @@ pipeline {
         stage('build') {
             steps {
                 sh 'node --version'
+                sh 'npm install -g nx'
+                sh 'npm run build'
             }
         }
     }
